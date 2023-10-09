@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Karla&family=League+Spartan&family=Outfit:wght@300&family=Poppins&family=Space+Grotesk:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; 
+    background-color: hsl(0, 0%, 86%);
+}
+main{
+  display: grid;
+ place-content: center; 
+ margin: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    background-color:  hsl(0, 0%, 100%);
+    padding: 0 40px;
+    width: 470px;
+    height: 500px;
+    border-radius: 20px 20px 100px 20px ;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.details{
+    display: flex;
+    margin-top: -30px;
+}
+.details label{
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 2px;
+}
+label.active{
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+.details input{
+    width: 65%;
+    height: 100%;
+    border: 1.5px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-size: 32px;
+    padding-left: 10px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+}
+input[type="number"]::-webkit-inner-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input.active{
+    width: 65%;
+    height: 90%;
+    border-color: hsl(0, 100%, 67%);
+}
+.details input:focus{
+    outline: none;
+    border-color: hsl(0, 100%, 67%);
+}
+.break{
+    margin: 40px 0 10px 0;
+    border-top: 1.5px solid hsl(0, 0%, 86%);
+    width: 100%;
+    /* border-radius: 50%; */
+}
+.break p{
+    background-color: hsl(259, 100%, 65%);
+    width: 10%;
+    padding: 10px 11px;
+    border-radius: 50%;
+    margin-left: 80%;
+}
+.text-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: -20px;
+    margin-left: 50px;
+}
+.display{
+    display: flex;
+    gap: 20px; 
+    font-style: italic;
+}
+.text-display .display p{
+    font-size: 60px;
+    font-weight: 800;
+     letter-spacing: -3px;
+     color:  hsl(0, 0%, 8%);
+}
+.display .space {
+    font-size: 52px;
+    letter-spacing: 2px;
+    color: hsl(259, 100%, 65%);
+    font-weight: 800;
+}
+.invalid{
+    color: hsl(0, 100%, 67%);
+    font-size: 10px;
+    display: none;
+}
+.invalid.active{
+    display: block;
+}
+@media (min-width: 300px) and (max-width: 760px) {
+    body{
+        overflow: hidden;
+    }
+    .container {
+        width: 370px;
+        height: 450px;
+    }
+    .break p{
+        margin-left: 40%;
+    }
+    .details input{
+        width: 50%;
+        font-size: 20px;
+    }
+}

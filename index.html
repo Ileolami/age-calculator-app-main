@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Age Calculator App</title>
+</head>
+<body>
+    <main >
+        <div class="container">
+            <div class="details">
+                <div>
+                <label for="day">DAY</label><br>
+                <input type="number" name="" id="day" placeholder="DD">
+                <p class="invalid" id="invalid-day">This flied is required</p>
+                </div>
+                <div>
+                    <label for="day">MONTH</label><br>
+                <input type="number" name="" id="month" placeholder="MM">
+                <p class="invalid" id="invalid-month">This field is required</p>
+                </div>
+               <div>
+                <label for="day">YEAR</label><br>
+                <input type="number" id="year" placeholder="YYYY">
+                <p class="invalid" id="invalid-year">This flied is required</p>
+               </div>
+            </div>
+            <div class="break">
+              <p> <img src="./assets/images/icon-arrow.svg" alt="" width="40px"></p>
+            </div>
+            <div class="text-display">
+                <div class="display">
+                 <span id="displayYear" class="space">- -</span> <p>years</p>
+                </div>
+                <div class="display">
+                   <span id="displayMonths" class="space">- -</span><p>months</p>
+                </div>
+                <div class="display">
+                   <span id="displayDays" class="space">- -</span> <p>days</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<body>
+ <script src="script.js"></script>   
+</body>
+</html>
